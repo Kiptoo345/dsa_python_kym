@@ -23,6 +23,7 @@ def tuple_length():
 def single_element_tuple():
     """Create a tuple with one element"""
     single = (5,)  # NOTE the comma!
+    print(type(single))
     print("Single element tuple:", single)
 
 
@@ -64,11 +65,13 @@ def convert_tuple_list():
     numbers = (1, 2, 3)
 
     numbers_list = list(numbers)
+    print(type(numbers_list))
     print("Tuple to list:", numbers_list)
 
     numbers_list.append(4)
 
     numbers_tuple = tuple(numbers_list)
+    print(type(numbers_tuple))
     print("List back to tuple:", numbers_tuple)
 
 
@@ -76,7 +79,7 @@ def unpack_tuple():
     """Unpack tuple into variables"""
     person = ("Kelvin", 20, "Kenya")
 
-    name, age, country = person
+    name, age, country = person #a single variablle name attached to one tuple
     print("Name:", name)
     print("Age:", age)
     print("Country:", country)

@@ -20,7 +20,7 @@ def getValues():
     
 getValues()
 
-# functions
+# function ms
 
 def basic_function():
     """A simple function"""

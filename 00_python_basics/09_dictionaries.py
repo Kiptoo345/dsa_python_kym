@@ -18,8 +18,8 @@ def access_values():
         "course": "Computer Science"
     }
 
-    print("Name:", student["name"])
-    print("Age:", student.get("age"))  # safer method
+    print("Name:", student["name"])#gives an error if the variable does not exist
+    print("Age:", student.get("age"))  # safer method ; returns "null" if the  variable is not available
 
 
 def modify_values():
