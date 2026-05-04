@@ -1,1 +1,17 @@
-print("Hello python")
+#print("Hello python")
+
+def list_slicing():
+    """Demonstrate slicing"""
+    numbers = [1, 2, 3, 4, 5]
+
+    print("First 3 elements:", numbers[:2])
+    print("Last 2 elements:", numbers[-2:])
+    print("Reversed list:", numbers[::-1])
+    
+def create_tuple():
+    """Create a simple tuple"""
+    numbers = (1, 2, 3, 4, 5)
+    print("Created tuple:", numbers)    
+
+create_tuple()
+list_slicing()
