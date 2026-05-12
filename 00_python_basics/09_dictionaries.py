@@ -19,7 +19,7 @@ def access_values():
     }
 
     print("Name:", student["name"])
-    print("Age:", student.get("age"))  # safer method
+    print("Age:", student.get("name"))  # safer method
 
 
 def modify_values():

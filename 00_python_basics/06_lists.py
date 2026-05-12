@@ -3,14 +3,18 @@
 def create_list():
     """Create a simple list"""
     numbers = [1, 2, 3, 4, 5]
+    num = []
+    print(type(num))
     print("Created list:", numbers)
 
 
 def access_elements():
     """Access elements using index"""
     fruits = ["apple", "banana", "cherry"]
-    print("First element:", fruits[0])
-    print("Last element:", fruits[-1])
+    i = 0
+    print("First element:", fruits[i])
+    print("Last element:", fruits[i + 1])
+    print("Element:", fruits[i - 1])
 
 
 def modify_elements():
@@ -24,7 +28,8 @@ def modify_elements():
 def add_elements():
     """Add elements to a list"""
     numbers = [1, 2, 3]
-
+    
+    print("Before append:", numbers)
     numbers.append(4)  # add to end
     print("After append:", numbers)
 
@@ -48,9 +53,10 @@ def list_slicing():
     """Demonstrate slicing"""
     numbers = [1, 2, 3, 4, 5]
 
-    print("First 3 elements:", numbers[:3])
-    print("Last 2 elements:", numbers[-2:])
+    print("First 3 elements:", numbers[1:])
+    print("Last 2 elements:", numbers[-4:])
     print("Reversed list:", numbers[::-1])
+    print(" list:", numbers[:])
 
 
 def loop_through_list():
@@ -65,7 +71,8 @@ def loop_through_list():
 def list_length():
     """Get length of list"""
     numbers = [1, 2, 3, 4, 5]
-    print("Length:", len(numbers))
+    number_of_elements = len(numbers) 
+    print("Length:", number_of_elements)
 
 
 def check_membership():
@@ -79,38 +86,40 @@ def check_membership():
 def sort_list():
     """Sort a list"""
     numbers = [5, 2, 9, 1, 3]
+    
+    # numbers = sorted(numbers)
 
     numbers.sort()
     print("Sorted list:", numbers)
 
 
 def main():
-    print("\n--- CREATE LIST ---")
-    create_list()
+    # print("\n--- CREATE LIST ---")
+    # create_list()
 
-    print("\n--- ACCESS ELEMENTS ---")
-    access_elements()
+    # print("\n--- ACCESS ELEMENTS ---")
+    # access_elements()
 
-    print("\n--- MODIFY ELEMENTS ---")
-    modify_elements()
+    # print("\n--- MODIFY ELEMENTS ---")
+    # modify_elements()
 
-    print("\n--- ADD ELEMENTS ---")
-    add_elements()
+    # print("\n--- ADD ELEMENTS ---")
+    # add_elements()
 
-    print("\n--- REMOVE ELEMENTS ---")
-    remove_elements()
+    # print("\n--- REMOVE ELEMENTS ---")
+    # remove_elements()
 
-    print("\n--- LIST SLICING ---")
-    list_slicing()
+    # print("\n--- LIST SLICING ---")
+    # list_slicing()
 
-    print("\n--- LOOP THROUGH LIST ---")
-    loop_through_list()
+    # print("\n--- LOOP THROUGH LIST ---")
+    # loop_through_list()
 
-    print("\n--- LIST LENGTH ---")
-    list_length()
+    # print("\n--- LIST LENGTH ---")
+    # list_length()
 
-    print("\n--- CHECK MEMBERSHIP ---")
-    check_membership()
+    # print("\n--- CHECK MEMBERSHIP ---")
+    # check_membership()
 
     print("\n--- SORT LIST ---")
     sort_list()
