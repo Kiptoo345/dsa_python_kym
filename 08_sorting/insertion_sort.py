@@ -21,6 +21,7 @@ def insertion_sort(unsorted_list):
     # Start from the second element (index 1) and move through the list
     for current_index in range(1, number_of_elements):
         current_value = unsorted_list[current_index]
+        print(f"Outer loop {current_value}")
 
         # Move the current value to its correct position in the sorted part
         while unsorted_list[current_index - 1] > current_value and current_index > 0:
@@ -29,6 +30,7 @@ def insertion_sort(unsorted_list):
             temp = unsorted_list[current_index]
             unsorted_list[current_index] = unsorted_list[current_index - 1]
             unsorted_list[current_index - 1] = temp
+            print(unsorted_list)
 
             # numbers[current_index], numbers[current_index - 1] = numbers[current_index - 1], numbers[current_index]
 
@@ -40,7 +42,7 @@ def insertion_sort(unsorted_list):
 
 
 # 10 unique numbers from 1 to 99
-random_list = random.sample(range(1, 100), 10)
+random_list = random.sample(range(1, 100), 5)
 
 print("Unsorted list:", random_list)
 sorted_list = insertion_sort(random_list.copy())
