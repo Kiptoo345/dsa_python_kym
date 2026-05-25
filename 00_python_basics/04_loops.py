@@ -1,5 +1,4 @@
 
-
 # loops
 
 def for_loop_basic():
@@ -147,4 +146,3 @@ def main():
 
 if __name__ == "__main__":
     main()
-

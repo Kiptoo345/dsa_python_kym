@@ -19,7 +19,8 @@ def getValues():
     print(f"The smallest value is {results}")
     
 getValues()
-# functions
+
+# function ms
 
 def basic_function():
     """A simple function"""
@@ -132,4 +133,3 @@ def main():
 
 if __name__ == "__main__":
     main()
-

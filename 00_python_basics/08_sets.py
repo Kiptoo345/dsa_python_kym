@@ -2,8 +2,12 @@
 
 def create_set():
     """Create a simple set"""
+
+    numbers = {1, 2, 2, 3, 4, 4, 5}
+
     numbers = {1, 2, 3, 4, 5}
     num = set() # creating empty set
+
     print("Created set:", numbers)
 
 

@@ -65,14 +65,20 @@ def convert_tuple_list():
     numbers = (1, 2, 3)
     print(type(numbers))
 
+    numbers_list = list(numbers)
+
     numbers_list = list(numbers) # type cast tuple to list
+
     print(type(numbers_list))
     print("Tuple to list:", numbers_list)
 
     numbers_list.append(4)
     numbers_list.append(5)
 
+    numbers_tuple = tuple(numbers_list)
+
     numbers_tuple = tuple(numbers_list) # type cast list to tuple
+
     print(type(numbers_tuple))
     print("List back to tuple:", numbers_tuple)
 
@@ -81,7 +87,7 @@ def unpack_tuple():
     """Unpack tuple into variables"""
     person = ("Kelvin", 20, "Kenya")
 
-    name, age, country = person
+    name, age, country = person #a single variablle name attached to one tuple
     print("Name:", name)
     print("Age:", age)
     print("Country:", country)

@@ -8,8 +8,6 @@ balance = 1799.99
 print(id(name1))
 print(id(name2))
 
-
-
 name = "John"
 name2 = "John"
 num = 147

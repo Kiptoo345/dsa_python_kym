@@ -87,9 +87,14 @@ def sort_list():
     """Sort a list"""
     numbers = [5, 2, 9, 1, 3]
     
+
+    numbers = sorted(numbers) #more preferable to sort, incase of reassignment needs
+    #numbers.sort()
+
     # numbers = sorted(numbers)
 
     numbers.sort()
+
     print("Sorted list:", numbers)
 
 

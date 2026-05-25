@@ -5,6 +5,7 @@ if (num/5)>10:
     print ("True")
 else:
     print("False")
+
 # control_flow
 
 def if_statement():
@@ -157,4 +158,3 @@ def main():
 
 if __name__ == "__main__":
     main()
-
