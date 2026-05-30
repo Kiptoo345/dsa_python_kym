@@ -7,21 +7,22 @@ def direct_recursion(n):
     print(n)
     return direct_recursion(n-1)
 
-#direct_recursion(5)
+
+direct_recursion(5)
 
 #indirect recursion - a function calling another function
 
 #def a(n):
-    if n>0:
-        print(n)
-        return b(n-1)
+    #if n>0:
+        #print(n)
+        #return b(n-1)
 
 #def b(n):
-    if n<1:
-        return n
-    else:
-        print(n)
-        return a(n-1)
+    #if n<1:
+        #return n
+   # else:
+       # print(n)
+      #  return a(n-1)
     
 #a(7)
 
@@ -43,4 +44,4 @@ def c():
     print(5)
     return 0 #clearing the stack
 
-a()
+#a()
