@@ -12,7 +12,7 @@ def quickSort(unsorted_list):
     return quickSort(left) + [pivot] + quickSort(right)
 
 def getValues():
-    unsorted_list = random.sample(range(100),10)
+    unsorted_list = random.sample(range(100),8)
     print(f"Unsorted List {unsorted_list}")
     result = quickSort(unsorted_list)
     print(f"Sorted list {result}")

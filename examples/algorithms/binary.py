@@ -21,7 +21,7 @@ print(f"The list of values are {values}")
 
 target = int(input("Enter a number to search: "))
 
-result = binary_reccursive(values,target,low , high)
+result = binary_reccursive(values,target, 0 , len(values))
 if result != -1:
     print(f"item {values[result]} found at index {result}")
 else:
