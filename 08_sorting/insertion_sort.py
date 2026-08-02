@@ -1,19 +1,4 @@
-# def insertion_sort(arr):
-#     for i in range(1, len(arr)):
-#         key = arr[i]
-#         j = i - 1
-#         while j >= 0 and key < arr[j]:
-#             arr[j + 1] = arr[j]
-#             j -= 1
-#             j = j - 1
-#         arr[j + 1] = key
-#     return arr
-#
-#
-# print(insertion_sort([8, 4, 1, 5, 9]))
-
 import random
-
 
 def insertion_sort(unsorted_list):
     number_of_elements = len(unsorted_list)
@@ -38,9 +23,7 @@ def insertion_sort(unsorted_list):
 
     return unsorted_list
 
-
-# 10 unique numbers from 1 to 99
-random_list = random.sample(range(1, 100), 10)
+random_list = random.sample(range(10, 20), 10)
 
 print("Unsorted list:", random_list)
 sorted_list = insertion_sort(random_list.copy())
